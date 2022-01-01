@@ -1,6 +1,7 @@
 :root {
   --branding-color: #d6779d;
   --secondary-color: #f6f6f9;
+  --third-color: #272142;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -24,7 +25,7 @@ body {
 
 .fa-github-square {
   font-size: 30px;
-  color: #272142;
+  color: var(--third-color);
   margin: 0 5px;
   transition: all 100ms ease-in-out;
 }
@@ -36,7 +37,7 @@ body {
 
 .fa-linkedin {
   font-size: 30px;
-  color: #272142;
+  color: var(--third-color);
   margin: 0 5px;
   transition: all 100ms ease-in-out;
 }
@@ -49,7 +50,7 @@ body {
 .fa-instagram-square {
   font-size: 30px;
   margin: 0 5px;
-  color: #272142;
+  color: var(--third-color);
   transition: all 100ms ease-in-out;
 }
 
@@ -93,7 +94,7 @@ body {
   font-family: var(--heading-font-family);
   font-weight: bold;
   font-size: 96px;
-  color: #272142;
+  color: var(--third-color);
 }
 
 .heading-container h2 {
@@ -211,7 +212,7 @@ h6 {
   display: block;
   margin-bottom: 180px;
   margin-top: 70px;
-  background-color: #272142;
+  background-color: var(--third-color);
   border-radius: 4px;
   line-height: 27px;
   padding: 15px 30px;
@@ -224,7 +225,7 @@ h6 {
 }
 
 .btn-project:hover {
-  color: #272142;
+  color: var(--third-color);
   cursor: pointer;
   background-color: white;
   border: 1px solid var(--secondary-color);
@@ -234,7 +235,7 @@ h6 {
   display: block;
   margin-bottom: 30px;
   margin-top: 50px;
-  background-color: #272142;
+  background-color: var(--third-color);
   border-radius: 4px;
   line-height: 27px;
   padding: 15px 30px;
@@ -247,7 +248,7 @@ h6 {
 }
 
 .btn-contact-send:hover {
-  color: #272142;
+  color: var(--third-color);
   cursor: pointer;
   background-color: white;
   border: 1px solid var(--secondary-color);
@@ -271,7 +272,7 @@ h4 {
   font-family: var(--heading-font-family);
   font-size: 34px;
   text-align: center;
-  color: #272142;
+  color: var(--third-color);
   margin-top: 30px;
 }
 
@@ -288,7 +289,7 @@ h4 {
   font-weight: 500;
   font-family: var(--heading-font-family);
   font-size: 34px;
-  color: #272142;
+  color: var(--third-color);
   margin-top: 30px;
   text-decoration: none;
   transition: all 100ms ease-in-out;
@@ -303,6 +304,12 @@ p {
   font-size: 16px;
   font-weight: normal;
   line-height: 30px;
+}
+
+.project-description span {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.7;
 }
 
 .text-opi {
@@ -330,7 +337,7 @@ p {
 
 .open-source-code {
   text-decoration: none;
-  color: #272142;
+  color: var(--third-color);
   opacity: 60%;
   transition: all 100ms ease-in-out;
 }
@@ -397,10 +404,6 @@ p {
     margin-bottom: 0px;
   }
 
-  .project-hr {
-    display: none;
-  }
-
   .contact-datas {
     margin: 50px 0px 0px 0px;
   }
@@ -424,6 +427,19 @@ p {
   }
   .project-description h2 {
     font-size: 40px;
+  }
+}
+
+@media (max-width: 770px) {
+  .social-images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fa-github-square,
+  .fa-linkedin,
+  .fa-instagram-square {
+    margin: 5px;
   }
 }
 
