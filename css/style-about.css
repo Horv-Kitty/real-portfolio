@@ -330,6 +330,19 @@ p {
   }
 }
 
+@media (max-width: 770px) {
+  .social-images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fa-github-square,
+  .fa-linkedin,
+  .fa-instagram-square {
+    margin: 5px;
+  }
+}
+
 @media (max-width: 500px) {
   .profilphoto {
     display: none;
