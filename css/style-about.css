@@ -318,6 +318,10 @@ p {
     padding: 20px 0px;
     margin-top: 0px;
   }
+
+  .shecodes-image:hover {
+    transform: scale(3);
+  }
 }
 
 @media (min-width: 1000px) {
