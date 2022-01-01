@@ -342,6 +342,10 @@ p {
   .menus {
     font-size: 20px;
   }
+
+  .shecodes-image:hover {
+    transform: scale(2);
+  }
 }
 
 @media (max-width: 370px) {
@@ -359,5 +363,9 @@ p {
   .heading-container h1 {
     font-size: 40px;
     line-height: 1.5;
+  }
+
+  .shecodes-image:hover {
+    transform: scale(1.5);
   }
 }
