@@ -237,7 +237,6 @@ p {
 
 .pagedown-container {
   background-color: var(--secondary-color);
-  float: inline-end;
 }
 
 .text {
